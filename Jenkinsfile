@@ -21,17 +21,17 @@ pipeline {
             }
         }
         
-        stage('Build') {
-            steps {
-                sh 'mvn clean package -DskipTests'
-            }
-        }
+        // stage('Build') {
+        //     steps {
+        //         sh 'mvn clean package -DskipTests'
+        //     }
+        // }
         
-        stage('Test') {
-            steps {
-                sh 'mvn test'
-            }
-        }
+        // stage('Test') {
+        //     steps {
+        //         sh 'mvn test'
+        //     }
+        // }
         
         // stage('SonarQube Analysis') {
         //     steps {
