@@ -5,14 +5,14 @@ pipeline {
 
     environment {
         sonarqube_token = credentials('sonar-secrets-id')
-        IMAGE_NAME = "medlamin13956814/simple-java-maven-app"
+        IMAGE_NAME = "medlamin13956814/challenge"
         IMAGE_TAG = "latest"
     }
     
-    tools {
-        maven 'Maven'
-    //    jdk 'JDK11'
-    }
+    // tools {
+    //     maven 'Maven'
+    // //    jdk 'JDK11'
+    // }
     
     stages {
         stage('Checkout') {
