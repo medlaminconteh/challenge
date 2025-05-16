@@ -160,7 +160,7 @@ pipeline {
         //     }
         // }
 
-        stage('Deploy Application') {
+        stage('Deploy Application To Openshift') {
             steps {
                 script {
                     //OpenShiftHelper.deployDeployment(this, PROJECT, IMAGE_NAME, APP_NAME, APP_DEPLOYMENT)
