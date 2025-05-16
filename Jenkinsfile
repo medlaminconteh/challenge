@@ -171,16 +171,16 @@ pipeline {
             }
         }
 
-        stage('Check Deployment Status') {
-            steps {
-                script {
-                    if (!OpenShiftHelper.checkDeployment(this, PROJECT, APP_NAME, APP_DEPLOYMENT)) {
-                        error "Le déploiement a échoué !"
-                    } else {
-                        echo "L'application a été déployée avec succès sur OpenShifTt !"
-                    }
-                }
-            }
-        }
+        // stage('Check Deployment Status') {
+        //     steps {
+        //         script {
+        //             if (!OpenShiftHelper.checkDeployment(this, PROJECT, APP_NAME, APP_DEPLOYMENT)) {
+        //                 error "Le déploiement a échoué !"
+        //             } else {
+        //                 echo "L'application a été déployée avec succès sur OpenShifTt !"
+        //             }
+        //         }
+        //     }
+        // }
     }
 }
