@@ -171,7 +171,7 @@ pipeline {
             }
         }
 
-        // stage('Check Deployment Status') {
+        // stage('Check Deployment Statuss') {
         //     steps {
         //         script {
         //             if (!OpenShiftHelper.checkDeployment(this, PROJECT, APP_NAME, APP_DEPLOYMENT)) {
